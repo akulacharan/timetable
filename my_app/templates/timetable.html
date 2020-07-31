@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>charan</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+<body>
+{% block content %}
+        <div class="col-md-10 offset-md-1 mt-5">
+          <div class="jumbotron">
+           <div>
+               <H1><FONT COLOR="DARKCYAN"><CENTER>YOUR COLLEGE TIME TABLE</FONT></H1>
+                <p></p>
+           </div>
+           <table class="table" border="2" cellspacing="3" align="center" style="height:70%;">
+               <tr>
+                <td align="center">
+                <td class="editable" data-id="{{content.id}}" data-type="tm1">{{content.tm1}}
+                <td class="editable" data-id="{{content.id}}" data-type="tm2">{{content.tm2}}
+                <td class="editable" data-id="{{content.id}}" data-type="tm3">{{content.tm3}}
+                <td class="editable" data-id="{{content.id}}" data-type="tm4">{{content.tm4}}
+                <td class="editable" data-id="{{content.id}}" data-type="tm5">{{content.tm5}}
+                <td class="editable" data-id="{{content.id}}" data-type="tm6">{{content.tm6}}
+                <td class="editable" data-id="{{content.id}}" data-type="tm7">{{content.tm7}}
+                <td class="editable" data-id="{{content.id}}" data-type="tm8">{{content.tm8}}
+               </tr>
+               <tr>
+                <td align="center">MONDAY
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="m1">{{content.m1}}
+                   <td align="center" class="editable" data-id="{{content.id}}" data-type="m2">{{content.m2}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="m3">{{content.m3}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="m4">{{content.m4}}<br>
+                <td rowspan="6" align="center" class="editable" data-id="{{content.id}}" data-type="m5">{{content.m5}}
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="m6">{{content.m6}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="m7">{{content.m7}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="m8">{{content.m8}}
+               </tr>
+               <tr>
+                <td align="center">TUESDAY
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="tu1">{{content.tu1}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="tu2">{{content.tu2}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="tu3">{{content.tu3}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="tu4">{{content.tu4}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="tu5">{{content.tu5}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="tu6">{{content.tu6}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="tu7">{{content.tu7}}<br>
+               </tr>
+               <tr>
+                <td align="center">WEDNESDAY
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="w1">{{content.w1}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="w2">{{content.w2}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="w3">{{content.w3}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="w4">{{content.w4}}<br>
+                <td colspan="3" align="center" class="editable" data-id="{{content.id}}" data-type="w5">{{content.w5}}<br>
+               </tr>
+               <tr>
+                <td align="center">THURSDAY
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="th1">{{content.th1}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="th2">{{content.th2}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="th3">{{content.th3}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="th4">{{content.th4}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="th5">{{content.th5}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="th6">{{content.th6}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="th7">{{content.th7}}<br>
+               </tr>
+               <tr>
+                <td align="center">FRIDAY
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="f1">{{content.f1}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="f2">{{content.f2}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="f3">{{content.f3}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="f4">{{content.f4}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="f5">{{content.f5}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="f6">{{content.f6}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="f7">{{content.f7}}<br>
+               </tr>
+               <tr>
+                <td align="center">SATURDAY
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="s1">{{content.s1}}<br>
+                <td colspan="3" align="center" class="editable" data-id="{{content.id}}" data-type="s2">{{content.s2}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="s3">{{content.s3}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="s4">{{content.s4}}<br>
+                <td align="center" class="editable" data-id="{{content.id}}" data-type="s5">{{content.s5}}<br>
+               </tr>
+        </table>
+
+           <button  onclick="location.href=table/<int:id>/" class="btn btn-success mb-10" style="float:right;">Update</button>
+
+              <button onclick="location.href='/'" class="btn btn-success mr-10" style="float:left;">Home</button>
+              <h6 style="color:red;" align="center">Double click on cell to edit table</h6>
+          </div>
+        </div>
+
+
+{% endblock content %}
+{% block custom_js %}
+
+<script>
+        $(document).ready(function(){
+            $(document).on("dblclick",".editable",function(){
+                var value=$(this).text();
+                var input="<input type='text' class='input-data' value='"+value+"' class='form-control'>";
+                $(this).html(input);
+                $(this).removeClass("editable")
+            });
+
+        $(document).on("blur",".input-data",function(){
+                var value=$(this).val();
+                var td=$(this).parent("td");
+                $(this).remove();
+                td.html(value);
+                td.addClass("editable");
+                var type=td.data("type");
+                sendToServer(td.data("id"),value,type);
+            });
+
+        $(document).on("keypress",".input-data",function(e){
+                var key=e.which;
+                if(key==13){
+                    var value=$(this).val();
+                    var td=$(this).parent("td");
+                    $(this).remove();
+                    td.html(value);
+                    td.addClass("editable");
+                   var type=td.data("type");
+                   sendToServer(td.data("id"),value,type);
+                }
+            });
+
+        function sendToServer(id,value,type){
+                console.log(id);
+                console.log(value);
+                console.log(type);
+                $.ajax({
+                    url:"http://127.0.0.1:8000/savestudent",
+                    type:"POST",
+                    data:{id:id,type:type,value:value},
+                })
+                .done(function(response){
+                    console.log(response);
+                })
+                .fail(function(){
+                   console.log("Error Occured");
+                });
+
+            }
+         });
+</script>
+
+{% endblock custom_js %}
+</body>
+</html>
